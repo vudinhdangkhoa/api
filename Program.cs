@@ -10,7 +10,7 @@ var builder = WebApplication.CreateBuilder(args);
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 builder.Services.AddControllers();
-builder.Services.AddDbContext<MyDbContext>(option=> option.UseSqlServer("Server=KUPHA;Database=TenDatabase;Trusted_Connection=True;TrustServerCertificate=True;" ));
+builder.Services.AddDbContext<MyDbContext>(option=> option.UseSqlServer("Server=KUPHA;Database=QLPhongTro;Trusted_Connection=True;TrustServerCertificate=True;" ));
 builder.Services.AddCors(options =>
 {
     options.AddPolicy("AllowAll",
