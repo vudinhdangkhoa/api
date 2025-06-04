@@ -60,7 +60,7 @@ namespace api.controllers.DangNhapDangKy
 
             // Check if the username and password are correct
             Chu existingUser = db.Chus.FirstOrDefault(u => u.TaiKhoan == user.TaiKhoan && u.MatKhau == user.MatKhau);
-            KhachHang khachHang = db.KhachHangs.FirstOrDefault(u => u.Cccd == user.TaiKhoan && u.MatKhau == user.MatKhau);
+            KhachHang khachHang = db.KhachHangs.FirstOrDefault(u => u.Email == user.TaiKhoan && u.MatKhau == user.MatKhau);
             if (khachHang != null)
             {
                 return Ok(new{id=khachHang.IdKh});

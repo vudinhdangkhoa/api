@@ -145,3 +145,5 @@ D:\hoc\LTDD\DoAn\api\obj\Debug\net8.0\refint\api.dll
 D:\hoc\LTDD\DoAn\api\obj\Debug\net8.0\api.pdb
 D:\hoc\LTDD\DoAn\api\obj\Debug\net8.0\api.genruntimeconfig.cache
 D:\hoc\LTDD\DoAn\api\obj\Debug\net8.0\ref\api.dll
+D:\hoc\LTDD\DoAn\api\obj\Debug\net8.0\api.sourcelink.json
+D:\hoc\LTDD\DoAn\api\bin\Debug\net8.0\api.staticwebassets.runtime.json

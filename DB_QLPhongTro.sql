@@ -121,6 +121,15 @@ ADD CONSTRAINT FK_Chat_KhachHang FOREIGN KEY (idKH) REFERENCES KhachHang(idKH);
 alter table HoaDon
 add trangThai int default 0 --0 là chưa có trả tiền 1 là đã trả tiền
 
+alter table HoaDon
+add ngayThanhToan date 
+
+alter table HoaDon
+add tienDien float 
+
+alter table HoaDon
+add tienNuoc float
+
 alter table CoSo
 add  trangThai int default 1 --1 là cơ sở đó vẫn còn 0 là đã xóa cơ sở đó
 
@@ -129,6 +138,10 @@ add  trangThai int default 1 --1 là phòng đó vẫn còn 0 là đã xóa phò
 
 alter table CoSo
 add soLuong int default 0
+go
+
+alter table Chu
+add avatar varchar(50) default 'khonghinh'
 go
 
 create trigger trg_insertPhong
@@ -146,13 +159,17 @@ begin
 end
 
 
---select *from CoSo
+--select *from Phong
+
 --select * from Phong where idCoSo=2
 
 --INSERT INTO Phong (tenPhong, idCoSo) 
 --VALUES 
 --(N'Phòng A1', 4),
 --(N'Phòng B2', 4);
+--INSERT INTO Phong (tenPhong, idCoSo) 
+--VALUES
+--(N'Phòng C1', 4)
 
 --INSERT INTO KhachHang (tenKH, avatar, sdt, cccd, ngayDen, ngayDi, tinhtrang, email, matKhau, idPhong) 
 --VALUES 
@@ -178,7 +195,32 @@ end
 --(N'Trần Thị K', 'avatar11.jpg', '0912345678', '912345678912', GETDATE(), NULL, 1, 'tranthik@example.com', '123', 5),
 --(N'Lê Văn L', 'avatar12.jpg', '0387654123', '387654123387', GETDATE(), NULL, 1, 'levanl@example.com', '123', 5);
 
-
---INSERT INTO Phong (tenPhong, idCoSo) 
+--INSERT INTO HoaDon (soTien, idPhong, trangThai, ngayThanhToan, tienDien, tienNuoc) 
 --VALUES
---(N'Phòng C1', 4)
+--(500000, 1, 1, '2025-06-01', 100000, 3*60000),
+--(500000, 1, 1, '2025-05-01', 90000, 3*60000),
+--(500000, 1, 1, '2025-04-01', 120000, 3*60000),
+--(500000, 1, 1, '2025-03-01', 110000, 3*60000),
+--(500000, 1, 1, '2025-02-01', 96000, 3*60000),
+ 
+--(500000, 3, 1, '2025-06-01', 120000, 3*60000),
+--(500000, 3, 1, '2025-05-01', 116000, 3*60000),
+--(500000, 3, 1, '2025-04-01', 124000, 3*60000),
+--(500000, 3, 1, '2025-03-01', 118000, 3*60000),
+--(500000, 3, 1, '2025-02-01', 112000, 3*60000),
+ 
+--(500000, 4, 1, '2025-06-01', 160000, 3*60000),
+--(500000, 4, 1, '2025-05-01', 170000, 3*60000),
+--(500000, 4, 1, '2025-04-01', 164000, 3*60000),
+--(500000, 4, 1, '2025-03-01', 156000, 3*60000),
+--(500000, 4, 1, '2025-02-01', 150000, 3*60000),
+
+--(500000, 5, 1, '2025-06-01', 180000, 3*60000),
+--(500000, 5, 1, '2025-05-01', 184000, 3*60000),
+--(500000, 5, 1, '2025-04-01', 176000, 3*60000),
+--(500000, 5, 1, '2025-03-01', 172000, 3*60000),
+--(500000, 5, 1, '2025-02-01', 178000, 3*60000)
+
+
+
+

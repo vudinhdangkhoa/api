@@ -13,5 +13,7 @@ public partial class Chu
 
     public string MatKhau { get; set; } = null!;
 
+    public string? Avatar { get; set; }
+
     public virtual ICollection<CoSo> CoSos { get; set; } = new List<CoSo>();
 }

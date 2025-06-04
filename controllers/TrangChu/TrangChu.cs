@@ -17,6 +17,16 @@ namespace api.controllers.TrangChu
             db = context;
         }
         
+
+        [HttpGet("GetThongTinChu/{id}")]
+        public IActionResult GetThongTinChu(int id)
+        {
+            var chu = db.Chus.FirstOrDefault(t => t.IdChu == id);
+            if (chu == null) return BadRequest(new { message = "Không có thông tin chủ cơ sở" });
+            return Ok(new { chu.Ten, chu.TaiKhoan,chu.Avatar });
+        }
+
+
         [HttpGet("GetPhongvaKhach/{id}")]
         public IActionResult GetPhongvaKhach(int id){
             List<int> listCoSo = db.CoSos.Where(u=>u.IdChu==id).Select(t=>t.IdCoSo).ToList();

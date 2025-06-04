@@ -1,12 +1,125 @@
 {
   "Version": 1,
-  "Hash": "A9PKRZfZUTDhj1QRyCFFkEHzqJ04Y7sk6OEkYYD+as4=",
+  "Hash": "znIu7Q6pGDCpdBEv3kvgVbsHTpjsQIQfgavL06F07Fs=",
   "Source": "api",
   "BasePath": "_content/api",
   "Mode": "Default",
   "ManifestType": "Build",
   "ReferencedProjectsConfiguration": [],
-  "DiscoveryPatterns": [],
-  "Assets": [],
-  "Endpoints": []
+  "DiscoveryPatterns": [
+    {
+      "Name": "api\\wwwroot",
+      "Source": "api",
+      "ContentRoot": "D:\\hoc\\LTDD\\DoAn\\api\\wwwroot\\",
+      "BasePath": "_content/api",
+      "Pattern": "**"
+    }
+  ],
+  "Assets": [
+    {
+      "Identity": "D:\\hoc\\LTDD\\DoAn\\api\\wwwroot\\images\\Avatar\\anh1.jpg",
+      "SourceId": "api",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\hoc\\LTDD\\DoAn\\api\\wwwroot\\",
+      "BasePath": "_content/api",
+      "RelativePath": "images/Avatar/anh1#[.{fingerprint}]?.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "qg9806xcuj",
+      "Integrity": "FjZUwGuhW7yNw3s3WLDkq9DucLcx0RTLnP8klaMWs4A=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\Avatar\\anh1.jpg"
+    }
+  ],
+  "Endpoints": [
+    {
+      "Route": "images/Avatar/anh1.jpg",
+      "AssetFile": "D:\\hoc\\LTDD\\DoAn\\api\\wwwroot\\images\\Avatar\\anh1.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "91484"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"FjZUwGuhW7yNw3s3WLDkq9DucLcx0RTLnP8klaMWs4A=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 26 Dec 2021 02:23:19 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-FjZUwGuhW7yNw3s3WLDkq9DucLcx0RTLnP8klaMWs4A="
+        }
+      ]
+    },
+    {
+      "Route": "images/Avatar/anh1.qg9806xcuj.jpg",
+      "AssetFile": "D:\\hoc\\LTDD\\DoAn\\api\\wwwroot\\images\\Avatar\\anh1.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "91484"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"FjZUwGuhW7yNw3s3WLDkq9DucLcx0RTLnP8klaMWs4A=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 26 Dec 2021 02:23:19 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "qg9806xcuj"
+        },
+        {
+          "Name": "label",
+          "Value": "images/Avatar/anh1.jpg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-FjZUwGuhW7yNw3s3WLDkq9DucLcx0RTLnP8klaMWs4A="
+        }
+      ]
+    }
+  ]
 }

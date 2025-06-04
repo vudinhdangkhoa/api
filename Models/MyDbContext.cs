@@ -64,6 +64,11 @@ public partial class MyDbContext : DbContext
             entity.ToTable("Chu");
 
             entity.Property(e => e.IdChu).HasColumnName("idChu");
+            entity.Property(e => e.Avatar)
+                .HasMaxLength(50)
+                .IsUnicode(false)
+                .HasDefaultValue("khonghinh")
+                .HasColumnName("avatar");
             entity.Property(e => e.MatKhau)
                 .HasMaxLength(30)
                 .IsUnicode(false)
@@ -112,7 +117,10 @@ public partial class MyDbContext : DbContext
 
             entity.Property(e => e.IdHoaDon).HasColumnName("idHoaDon");
             entity.Property(e => e.IdPhong).HasColumnName("idPhong");
+            entity.Property(e => e.NgayThanhToan).HasColumnName("ngayThanhToan");
             entity.Property(e => e.SoTien).HasColumnName("soTien");
+            entity.Property(e => e.TienDien).HasColumnName("tienDien");
+            entity.Property(e => e.TienNuoc).HasColumnName("tienNuoc");
             entity.Property(e => e.TrangThai)
                 .HasDefaultValue(0)
                 .HasColumnName("trangThai");
@@ -127,7 +135,11 @@ public partial class MyDbContext : DbContext
         {
             entity.HasKey(e => e.IdKh).HasName("PK__KhachHan__9DB871740FB30303");
 
-            entity.ToTable("KhachHang", tb => tb.HasTrigger("trg_InsertKhachHang"));
+            entity.ToTable("KhachHang", tb =>
+                {
+                    tb.HasTrigger("trg_InsertKhachHang");
+                    tb.HasTrigger("trg_deleteKhachHang");
+                });
 
             entity.Property(e => e.IdKh).HasColumnName("idKH");
             entity.Property(e => e.Avatar)
@@ -191,7 +203,11 @@ public partial class MyDbContext : DbContext
         {
             entity.HasKey(e => e.IdPhong).HasName("PK__Phong__E540EED41A9543E4");
 
-            entity.ToTable("Phong", tb => tb.HasTrigger("trg_insertCoSo"));
+            entity.ToTable("Phong", tb =>
+                {
+                    tb.HasTrigger("trg_deletePhong");
+                    tb.HasTrigger("trg_insertCoSo");
+                });
 
             entity.Property(e => e.IdPhong).HasColumnName("idPhong");
             entity.Property(e => e.IdCoSo).HasColumnName("idCoSo");
