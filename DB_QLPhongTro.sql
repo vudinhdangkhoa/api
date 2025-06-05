@@ -125,6 +125,9 @@ alter table HoaDon
 add ngayThanhToan date 
 
 alter table HoaDon
+add ngayTao date
+
+alter table HoaDon
 add tienDien float 
 
 alter table HoaDon
@@ -142,7 +145,7 @@ go
 
 alter table Chu
 add avatar varchar(50) default 'khonghinh'
-go
+go 
 
 create trigger trg_insertPhong
 on Phong
@@ -158,8 +161,44 @@ begin
 	inner join inserted i on s.idCoSo=i.idCoSo
 end
 
+CREATE PROCEDURE TaoHoaDonTuDong
+    @idChu INT
+AS
+BEGIN
+    DECLARE @idPhong INT, @idCoSo INT
+   
 
---select *from Phong
+   
+    DECLARE PhongCursor CURSOR FOR
+    SELECT p.idPhong, p.idCoSo FROM Phong p
+    JOIN CoSo c ON p.idCoSo = c.idCoSo
+    WHERE c.idChu = @idChu AND c.trangThai = 1 AND p.trangThai = 1
+
+   
+    OPEN PhongCursor
+    FETCH NEXT FROM PhongCursor INTO @idPhong, @idCoSo
+
+    WHILE @@FETCH_STATUS = 0
+    BEGIN
+       
+        INSERT INTO HoaDon (soTien, idPhong, trangThai, ngayThanhToan, tienDien, tienNuoc,ngayTao)
+        VALUES (3000000, @idPhong, -1, null, 0, 0,GETDATE())
+
+       
+        FETCH NEXT FROM PhongCursor INTO @idPhong, @idCoSo
+    END
+
+  
+    CLOSE PhongCursor
+    DEALLOCATE PhongCursor
+END;
+
+--exec TaoHoaDonTuDong  @idChu=1 
+
+--delete HoaDon
+
+--select *from HoaDon 
+--where ngayTao= '2025-06-05'
 
 --select * from Phong where idCoSo=2
 
@@ -195,31 +234,31 @@ end
 --(N'Trần Thị K', 'avatar11.jpg', '0912345678', '912345678912', GETDATE(), NULL, 1, 'tranthik@example.com', '123', 5),
 --(N'Lê Văn L', 'avatar12.jpg', '0387654123', '387654123387', GETDATE(), NULL, 1, 'levanl@example.com', '123', 5);
 
---INSERT INTO HoaDon (soTien, idPhong, trangThai, ngayThanhToan, tienDien, tienNuoc) 
+--INSERT INTO HoaDon (soTien, idPhong, trangThai, ngayThanhToan, ngayTao, tienDien, tienNuoc)  
 --VALUES
---(500000, 1, 1, '2025-06-01', 100000, 3*60000),
---(500000, 1, 1, '2025-05-01', 90000, 3*60000),
---(500000, 1, 1, '2025-04-01', 120000, 3*60000),
---(500000, 1, 1, '2025-03-01', 110000, 3*60000),
---(500000, 1, 1, '2025-02-01', 96000, 3*60000),
- 
---(500000, 3, 1, '2025-06-01', 120000, 3*60000),
---(500000, 3, 1, '2025-05-01', 116000, 3*60000),
---(500000, 3, 1, '2025-04-01', 124000, 3*60000),
---(500000, 3, 1, '2025-03-01', 118000, 3*60000),
---(500000, 3, 1, '2025-02-01', 112000, 3*60000),
- 
---(500000, 4, 1, '2025-06-01', 160000, 3*60000),
---(500000, 4, 1, '2025-05-01', 170000, 3*60000),
---(500000, 4, 1, '2025-04-01', 164000, 3*60000),
---(500000, 4, 1, '2025-03-01', 156000, 3*60000),
---(500000, 4, 1, '2025-02-01', 150000, 3*60000),
+--(500000, 1, 1, '2025-06-02', '2025-06-01', 100000, 3*60000),
+--(500000, 1, 1, '2025-05-02', '2025-05-01', 90000, 3*60000),
+--(500000, 1, 1, '2025-04-02', '2025-04-01', 120000, 3*60000),
+--(500000, 1, 1, '2025-03-02', '2025-03-01', 110000, 3*60000),
+--(500000, 1, 1, '2025-02-02', '2025-02-01', 96000, 3*60000),
 
---(500000, 5, 1, '2025-06-01', 180000, 3*60000),
---(500000, 5, 1, '2025-05-01', 184000, 3*60000),
---(500000, 5, 1, '2025-04-01', 176000, 3*60000),
---(500000, 5, 1, '2025-03-01', 172000, 3*60000),
---(500000, 5, 1, '2025-02-01', 178000, 3*60000)
+--(500000, 3, 1, '2025-06-02', '2025-06-01', 120000, 3*60000),
+--(500000, 3, 1, '2025-05-02', '2025-05-01', 116000, 3*60000),
+--(500000, 3, 1, '2025-04-02', '2025-04-01', 124000, 3*60000),
+--(500000, 3, 1, '2025-03-02', '2025-03-01', 118000, 3*60000),
+--(500000, 3, 1, '2025-02-02', '2025-02-01', 112000, 3*60000),
+
+--(500000, 4, 1, '2025-06-02', '2025-06-01', 160000, 3*60000),
+--(500000, 4, 1, '2025-05-02', '2025-05-01', 170000, 3*60000),
+--(500000, 4, 1, '2025-04-02', '2025-04-01', 164000, 3*60000),
+--(500000, 4, 1, '2025-03-02', '2025-03-01', 156000, 3*60000),
+--(500000, 4, 1, '2025-02-02', '2025-02-01', 150000, 3*60000),
+
+--(500000, 5, 1, '2025-06-02', '2025-06-01', 180000, 3*60000),
+--(500000, 5, 1, '2025-05-02', '2025-05-01', 184000, 3*60000),
+--(500000, 5, 1, '2025-04-02', '2025-04-01', 176000, 3*60000),
+--(500000, 5, 1, '2025-03-02', '2025-03-01', 172000, 3*60000),
+--(500000, 5, 1, '2025-02-02', '2025-02-01', 178000, 3*60000);
 
 
 

@@ -117,6 +117,7 @@ public partial class MyDbContext : DbContext
 
             entity.Property(e => e.IdHoaDon).HasColumnName("idHoaDon");
             entity.Property(e => e.IdPhong).HasColumnName("idPhong");
+            entity.Property(e => e.NgayTao).HasColumnName("ngayTao");
             entity.Property(e => e.NgayThanhToan).HasColumnName("ngayThanhToan");
             entity.Property(e => e.SoTien).HasColumnName("soTien");
             entity.Property(e => e.TienDien).HasColumnName("tienDien");

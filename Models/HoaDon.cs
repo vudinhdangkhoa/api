@@ -19,5 +19,7 @@ public partial class HoaDon
 
     public double? TienNuoc { get; set; }
 
+    public DateOnly? NgayTao { get; set; }
+
     public virtual Phong IdPhongNavigation { get; set; } = null!;
 }
