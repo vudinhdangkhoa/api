@@ -9,7 +9,7 @@ namespace api.Models.QuanLyCoSo
     {
         public string? TenPhong { get; set; }
 
-        
+        public int giaPhong { get; set; }
 
     
     }

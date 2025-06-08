@@ -5,6 +5,54 @@
       "PackagePath": "staticwebassets\\images\\Avatar\\anh1.jpg"
     },
     {
+      "Id": "D:\\hoc\\LTDD\\DoAn\\api\\wwwroot\\images\\Avatar\\avatar_1_638849742896548799.png",
+      "PackagePath": "staticwebassets\\images\\Avatar\\avatar_1_638849742896548799.png"
+    },
+    {
+      "Id": "D:\\hoc\\LTDD\\DoAn\\api\\wwwroot\\images\\Avatar\\avatar_1_638849744099303357.png",
+      "PackagePath": "staticwebassets\\images\\Avatar\\avatar_1_638849744099303357.png"
+    },
+    {
+      "Id": "D:\\hoc\\LTDD\\DoAn\\api\\wwwroot\\images\\Avatar\\avatar_1_638849744164891138.png",
+      "PackagePath": "staticwebassets\\images\\Avatar\\avatar_1_638849744164891138.png"
+    },
+    {
+      "Id": "D:\\hoc\\LTDD\\DoAn\\api\\wwwroot\\images\\Avatar\\avatar_1_638849744737866869.png",
+      "PackagePath": "staticwebassets\\images\\Avatar\\avatar_1_638849744737866869.png"
+    },
+    {
+      "Id": "D:\\hoc\\LTDD\\DoAn\\api\\wwwroot\\images\\Avatar\\avatar_1_638849744939518369.png",
+      "PackagePath": "staticwebassets\\images\\Avatar\\avatar_1_638849744939518369.png"
+    },
+    {
+      "Id": "D:\\hoc\\LTDD\\DoAn\\api\\wwwroot\\images\\Avatar\\avatar_1_638849745103152534.png",
+      "PackagePath": "staticwebassets\\images\\Avatar\\avatar_1_638849745103152534.png"
+    },
+    {
+      "Id": "D:\\hoc\\LTDD\\DoAn\\api\\wwwroot\\images\\Avatar\\avatar_1_638849746062956575.png",
+      "PackagePath": "staticwebassets\\images\\Avatar\\avatar_1_638849746062956575.png"
+    },
+    {
+      "Id": "D:\\hoc\\LTDD\\DoAn\\api\\wwwroot\\images\\Avatar\\avatar_1_638849746226537641.png",
+      "PackagePath": "staticwebassets\\images\\Avatar\\avatar_1_638849746226537641.png"
+    },
+    {
+      "Id": "D:\\hoc\\LTDD\\DoAn\\api\\wwwroot\\images\\Avatar\\avatar_1_638849746945583424.png",
+      "PackagePath": "staticwebassets\\images\\Avatar\\avatar_1_638849746945583424.png"
+    },
+    {
+      "Id": "D:\\hoc\\LTDD\\DoAn\\api\\wwwroot\\images\\Avatar\\avatar_1_638849747294435758.png",
+      "PackagePath": "staticwebassets\\images\\Avatar\\avatar_1_638849747294435758.png"
+    },
+    {
+      "Id": "D:\\hoc\\LTDD\\DoAn\\api\\wwwroot\\images\\Avatar\\avatar_1_638849750944716841.png",
+      "PackagePath": "staticwebassets\\images\\Avatar\\avatar_1_638849750944716841.png"
+    },
+    {
+      "Id": "D:\\hoc\\LTDD\\DoAn\\api\\wwwroot\\images\\HoaDon\\hd1.jpg",
+      "PackagePath": "staticwebassets\\images\\HoaDon\\hd1.jpg"
+    },
+    {
       "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.api.Microsoft.AspNetCore.StaticWebAssetEndpoints.props",
       "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssetEndpoints.props"
     },

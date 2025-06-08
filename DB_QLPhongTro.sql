@@ -63,6 +63,7 @@ create table Message(
 	idChat int,
 	foreign key (idChat) references Chat(idChat)
 )
+
 go
 
 
@@ -119,7 +120,7 @@ ALTER TABLE Chat
 ADD CONSTRAINT FK_Chat_KhachHang FOREIGN KEY (idKH) REFERENCES KhachHang(idKH);
 
 alter table HoaDon
-add trangThai int default 0 --0 là chưa có trả tiền 1 là đã trả tiền
+add trangThai int default 0 --0 là chưa có trả tiền, 1 là đã trả tiền,  -1 là mới tạo chưa có tiền điện và nước, 2 là đang chờ xác nhận
 
 alter table HoaDon
 add ngayThanhToan date 
@@ -133,11 +134,17 @@ add tienDien float
 alter table HoaDon
 add tienNuoc float
 
+alter table HoaDon
+add anhHoaDon varchar(255)
+
 alter table CoSo
 add  trangThai int default 1 --1 là cơ sở đó vẫn còn 0 là đã xóa cơ sở đó
 
 alter table Phong
 add  trangThai int default 1 --1 là phòng đó vẫn còn 0 là đã xóa phòng đó
+
+alter table Phong
+add tienPhong float 
 
 alter table CoSo
 add soLuong int default 0
@@ -146,6 +153,26 @@ go
 alter table Chu
 add avatar varchar(50) default 'khonghinh'
 go 
+
+alter table Chu
+add giaNuoc float default 0
+go
+
+alter table Chu
+add giaDien float default 0
+go
+
+
+
+--select * from HoaDon
+--select * from Chu
+
+update Chu
+set giaNuoc=0
+where idChu=2
+update Chu
+set giaDien=0
+where idChu=2
 
 create trigger trg_insertPhong
 on Phong
@@ -165,12 +192,12 @@ CREATE PROCEDURE TaoHoaDonTuDong
     @idChu INT
 AS
 BEGIN
-    DECLARE @idPhong INT, @idCoSo INT
+    DECLARE @idPhong INT, @idCoSo INT,@tienPhong float
    
 
    
     DECLARE PhongCursor CURSOR FOR
-    SELECT p.idPhong, p.idCoSo FROM Phong p
+    SELECT p.tienPhong, p.idPhong, p.idCoSo FROM Phong p
     JOIN CoSo c ON p.idCoSo = c.idCoSo
     WHERE c.idChu = @idChu AND c.trangThai = 1 AND p.trangThai = 1
 
@@ -182,7 +209,7 @@ BEGIN
     BEGIN
        
         INSERT INTO HoaDon (soTien, idPhong, trangThai, ngayThanhToan, tienDien, tienNuoc,ngayTao)
-        VALUES (3000000, @idPhong, -1, null, 0, 0,GETDATE())
+        VALUES (@tienPhong, @idPhong, -1, null, 0, 0,GETDATE())
 
        
         FETCH NEXT FROM PhongCursor INTO @idPhong, @idCoSo

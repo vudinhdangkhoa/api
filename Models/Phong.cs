@@ -15,6 +15,8 @@ public partial class Phong
 
     public int? TrangThai { get; set; }
 
+    public double? TienPhong { get; set; }
+
     public virtual ICollection<HoaDon> HoaDons { get; set; } = new List<HoaDon>();
 
     public virtual CoSo IdCoSoNavigation { get; set; } = null!;

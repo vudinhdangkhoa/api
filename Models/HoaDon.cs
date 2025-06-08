@@ -21,5 +21,7 @@ public partial class HoaDon
 
     public DateOnly? NgayTao { get; set; }
 
+    public string? AnhHoaDon { get; set; }
+
     public virtual Phong IdPhongNavigation { get; set; } = null!;
 }

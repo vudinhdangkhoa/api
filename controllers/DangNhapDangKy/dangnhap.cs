@@ -63,11 +63,18 @@ namespace api.controllers.DangNhapDangKy
             KhachHang khachHang = db.KhachHangs.FirstOrDefault(u => u.Email == user.TaiKhoan && u.MatKhau == user.MatKhau);
             if (khachHang != null)
             {
-                return Ok(new{id=khachHang.IdKh});
+                
             }
             if (existingUser != null)
             {
-                return Ok(new{id=existingUser.IdChu});
+                if (existingUser.GiaDien == 0 || existingUser.GiaNuoc == 0)
+                {
+                    return Ok(new { id = existingUser.IdChu, message = "Chủ cơ sở chưa cập nhật giá điện hoặc giá nước." });
+                }
+                else
+                {
+                    return Ok(new { id = existingUser.IdChu });
+                }
             }
             
             return Unauthorized("Invalid username or password.");

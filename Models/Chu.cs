@@ -15,5 +15,9 @@ public partial class Chu
 
     public string? Avatar { get; set; }
 
+    public double? GiaNuoc { get; set; }
+
+    public double? GiaDien { get; set; }
+
     public virtual ICollection<CoSo> CoSos { get; set; } = new List<CoSo>();
 }

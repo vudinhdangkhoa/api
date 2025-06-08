@@ -79,7 +79,7 @@ namespace api.controllers.QuanLy
         [HttpGet("GetPhong/{id}")]
         public IActionResult GetPhong(int id)
         {
-            var phong = db.Phongs.Where(t => t.IdCoSo == id&&t.TrangThai==1).Select(u => new { u.IdPhong, u.TenPhong, u.SoLuong, u.TrangThai,u.IdCoSo }).ToList();
+            var phong = db.Phongs.Where(t => t.IdCoSo == id&&t.TrangThai==1).Select(u => new { u.IdPhong, u.TenPhong,u.TienPhong, u.SoLuong, u.TrangThai,u.IdCoSo }).ToList();
             if (phong == null || phong.Count == 0) return BadRequest(new { message = "Không có phòng nào" });
             return Ok(phong);
         }
@@ -96,7 +96,8 @@ namespace api.controllers.QuanLy
             {
                 IdCoSo = id,
                 TenPhong = themPhong.TenPhong,
-                SoLuong = 0
+                SoLuong = 0,
+                TienPhong=themPhong.giaPhong
             };
             db.Phongs.Add(phong);
             db.SaveChanges();
@@ -133,7 +134,7 @@ namespace api.controllers.QuanLy
                 phong.IdPhong,
                 phong.TenPhong,
                 phong.SoLuong,
-                
+                phong.TienPhong,
                 khachHangs = khachHangs.Select(t => new {  t.TenKh, t.Sdt,t.NgayDen }).ToList()
             });
         }

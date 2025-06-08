@@ -69,6 +69,12 @@ public partial class MyDbContext : DbContext
                 .IsUnicode(false)
                 .HasDefaultValue("khonghinh")
                 .HasColumnName("avatar");
+            entity.Property(e => e.GiaDien)
+                .HasDefaultValue(0.0)
+                .HasColumnName("giaDien");
+            entity.Property(e => e.GiaNuoc)
+                .HasDefaultValue(0.0)
+                .HasColumnName("giaNuoc");
             entity.Property(e => e.MatKhau)
                 .HasMaxLength(30)
                 .IsUnicode(false)
@@ -116,6 +122,10 @@ public partial class MyDbContext : DbContext
             entity.ToTable("HoaDon");
 
             entity.Property(e => e.IdHoaDon).HasColumnName("idHoaDon");
+            entity.Property(e => e.AnhHoaDon)
+                .HasMaxLength(255)
+                .IsUnicode(false)
+                .HasColumnName("anhHoaDon");
             entity.Property(e => e.IdPhong).HasColumnName("idPhong");
             entity.Property(e => e.NgayTao).HasColumnName("ngayTao");
             entity.Property(e => e.NgayThanhToan).HasColumnName("ngayThanhToan");
@@ -216,6 +226,7 @@ public partial class MyDbContext : DbContext
             entity.Property(e => e.TenPhong)
                 .HasMaxLength(50)
                 .HasColumnName("tenPhong");
+            entity.Property(e => e.TienPhong).HasColumnName("tienPhong");
             entity.Property(e => e.TrangThai)
                 .HasDefaultValue(1)
                 .HasColumnName("trangThai");
