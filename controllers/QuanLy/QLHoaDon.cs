@@ -7,6 +7,14 @@ using api.Models;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using api.Models.QuanLyHoaDon;
+using System.Net.Mail;
+using System.Net;
+using iText.Kernel.Pdf;
+using iText.Layout;
+using iText.Layout.Element;
+using iText.Layout.Properties;
+using iText.IO.Font;
+using iText.Kernel.Font;
 namespace api.controllers.QuanLy
 {
     [ApiController]
@@ -88,6 +96,127 @@ namespace api.controllers.QuanLy
             return Ok(new { message = "Cập nhật hóa đơn thành công" });
         }
 
+        private byte[] TaoHoaDonPDF(HoaDon hoaDon, Phong phong, Chu chu)
+{
+    using (var stream = new MemoryStream())
+    {
+        var writer = new PdfWriter(stream);
+        var pdf = new PdfDocument(writer);
+        var document = new Document(pdf);
+
+        // Load font Unicode, thay đường dẫn bằng font .ttf bạn có
+        string fontPath = "C:/Windows/Fonts/tahoma.ttf"; // hoặc đường dẫn font phù hợp
+        var font = PdfFontFactory.CreateFont(fontPath, PdfEncodings.IDENTITY_H);
+        document.SetFont(font);
+
+        // Gán giá trị mặc định nếu bị null
+        double tienPhong = phong.TienPhong ?? 0;
+        double tienDien = hoaDon.TienDien ?? 0;
+        double giaDien = chu.GiaDien ?? 0;
+        double tienNuoc = hoaDon.TienNuoc ?? 0;
+        double giaNuoc = chu.GiaNuoc ?? 0;
+        double tongTien = hoaDon.SoTien ?? (tienPhong + tienDien * giaDien + tienNuoc); // fallback nếu SoTien null
+        DateOnly ngayTao = hoaDon.NgayTao ?? DateOnly.FromDateTime(DateTime.Now);
+
+        var coso = db.CoSos.FirstOrDefault(cs => cs.IdCoSo == phong.IdCoSo);
+        string tenCoSo = coso?.TenCoSo ?? "Không xác định";
+        string tenPhong = phong?.TenPhong ?? "Không xác định";
+
+        // Tiêu đề hóa đơn
+        document.Add(new Paragraph("HÓA ĐƠN TIỀN PHÒNG")
+            .SetTextAlignment(TextAlignment.CENTER)
+            .SetFontSize(20));
+
+        // Thông tin cơ bản
+        document.Add(new Paragraph($"Cơ sở: {tenCoSo}").SetFontSize(12));
+        document.Add(new Paragraph($"Phòng: {tenPhong}").SetFontSize(12));
+        document.Add(new Paragraph($"Tháng: {ngayTao.Month}/{ngayTao.Year}").SetFontSize(12));
+
+        var table = new Table(UnitValue.CreatePercentArray(new float[] { 4, 2, 2 })).UseAllAvailableWidth();
+        table.AddHeaderCell("Khoản thu");
+        table.AddHeaderCell("Đơn giá");
+        table.AddHeaderCell("Thành tiền");
+
+        table.AddCell("Tiền phòng");
+        table.AddCell($"{tienPhong:N0} VNĐ");
+        table.AddCell($"{tienPhong:N0} VNĐ");
+
+        table.AddCell("Tiền điện");
+        table.AddCell($"{giaDien:N0} VNĐ/kWh");
+        table.AddCell($"{(tienDien * giaDien):N0} VNĐ");
+
+        table.AddCell("Tiền nước");
+        table.AddCell($"{giaNuoc:N0} VNĐ/người");
+        table.AddCell($"{tienNuoc:N0} VNĐ");
+
+        document.Add(table);
+
+        double tongtien = tienPhong + (tienDien * giaDien) + tienNuoc;
+
+        // Tổng cộng + ngày tạo
+        document.Add(new Paragraph($"TỔNG CỘNG: {tongtien:N0} VNĐ")
+            .SetTextAlignment(TextAlignment.RIGHT)
+            .SetFontSize(14));
+
+        document.Add(new Paragraph($"Ngày tạo: {ngayTao:dd/MM/yyyy}")
+            .SetTextAlignment(TextAlignment.RIGHT));
+
+        document.Close();
+        return stream.ToArray();
+    }
+}
+
+
+
+
+        private void SendVerificationEmail(string email, HoaDon hoaDon, Phong phong, Chu chu)
+        {
+            var subject = $"Hóa đơn tháng {DateTime.Now.Month}/{DateTime.Now.Year}";
+            var body = $"Xin chào,\n\nĐây là hóa đơn tháng {DateTime.Now.Month} của bạn.\nVui lòng kiểm tra file đính kèm.\n\nCảm ơn!";
+            
+            try
+            {
+                // Tạo file PDF
+
+                byte[] pdfBytes ;
+                try
+                {
+                    pdfBytes = TaoHoaDonPDF(hoaDon, phong, chu);
+                }
+                catch (Exception ex)
+                {
+                    Console.WriteLine("Lỗi khi tạo PDF: " + ex.ToString());
+                    return;
+                }
+                SmtpClient smtpClient = new SmtpClient("smtp.gmail.com", 587)
+                {
+                    Credentials = new NetworkCredential("vudinhdangkhoa03@gmail.com", "petr nlro qogc dhow"),
+                    EnableSsl = true
+                };
+
+                MailMessage mail = new MailMessage
+                {
+                    From = new MailAddress("vudinhdangkhoa03@gmail.com"),
+                    Subject = subject,
+                    Body = body,
+                    IsBodyHtml = false
+                };
+
+                mail.To.Add(email);
+
+                
+                var attachment = new Attachment(new MemoryStream(pdfBytes), $"HoaDon_{DateTime.Now.Month}_{DateTime.Now.Year}.pdf", "application/pdf");
+                mail.Attachments.Add(attachment);
+
+                smtpClient.Send(mail);
+                Console.WriteLine("Email đã được gửi thành công đến " + email);
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine("Gửi email thất bại. Lỗi: " + ex.Message);
+            }
+        }
+
         [HttpPut("XacNhanHoaDon/{id}")]
         public IActionResult XacNhanHoaDon(int id)
         {
@@ -96,7 +225,18 @@ namespace api.controllers.QuanLy
             {
                 return BadRequest(new { message = "Hóa đơn không tồn tại" });
             }
-            hoadon.TrangThai = 1; // Đánh dấu hóa đơn đã thanh toán
+
+            Phong phong = db.Phongs.FirstOrDefault(t => t.IdPhong == hoadon.IdPhong);
+            Chu chu = db.Chus.FirstOrDefault(c => c.IdChu == db.CoSos.FirstOrDefault(cs => cs.IdCoSo == phong.IdCoSo).IdChu);
+            List<KhachHang> khachHangs = db.KhachHangs.Where(t => t.IdPhong == phong.IdPhong).ToList();
+
+            foreach (KhachHang kh in khachHangs)
+            {
+                SendVerificationEmail(kh.Email, hoadon, phong, chu); // Gửi email kèm PDF
+            }
+
+            hoadon.TrangThai = 1;
+            hoadon.NgayThanhToan = DateOnly.FromDateTime(DateTime.Now);
             db.Entry(hoadon).State = EntityState.Modified;
             db.SaveChanges();
             return Ok(new { message = "Xác nhận hóa đơn thành công" });

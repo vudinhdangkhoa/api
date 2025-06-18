@@ -34,8 +34,9 @@ namespace api.controllers.DangNhapDangKy
 
             
             // Check if the username already exists
-            var existingUser = db.Chus.FirstOrDefault(u => u.TaiKhoan == user.TaiKhoan&& u.MatKhau == user.MatKhau);
-            if (existingUser != null)
+            var existingUser = db.Chus.FirstOrDefault(u => u.TaiKhoan == user.TaiKhoan);
+            var existingKhachHang = db.KhachHangs.FirstOrDefault(u => u.Email == user.TaiKhoan);
+            if (existingUser != null|| existingKhachHang != null)
             {
                 return BadRequest("User already exists.");
             } 
@@ -63,7 +64,7 @@ namespace api.controllers.DangNhapDangKy
             KhachHang khachHang = db.KhachHangs.FirstOrDefault(u => u.Email == user.TaiKhoan && u.MatKhau == user.MatKhau);
             if (khachHang != null)
             {
-                
+                return Ok(new { idKH = khachHang.IdKh, message = "Đăng nhập thành công." });
             }
             if (existingUser != null)
             {
@@ -138,15 +139,28 @@ namespace api.controllers.DangNhapDangKy
         public IActionResult ForgotPassword(string email)
         {
             var user = db.Chus.FirstOrDefault(u => u.TaiKhoan == email);
+            var khachHang = db.KhachHangs.FirstOrDefault(u => u.Email == email);
+            if (khachHang != null)
+            {
+                userIDforgotPassword = khachHang.IdKh;
+                verificationCode = GenerateVerificationCode();
+                han = DateTime.Now.AddMinutes(30);
+
+                SendVerificationEmail(email, verificationCode);
+                return Ok();
+            }
             if (user == null)
                 return NotFound("No results found for this user.");
 
-            userIDforgotPassword = user.IdChu;
-            verificationCode = GenerateVerificationCode();
-            han =DateTime.Now.AddMinutes(30);
-                 
-            
-            SendVerificationEmail(email, verificationCode);
+            else
+            {
+                userIDforgotPassword = user.IdChu;
+                verificationCode = GenerateVerificationCode();
+                han = DateTime.Now.AddMinutes(30);
+
+
+                SendVerificationEmail(email, verificationCode);
+            }
             return Ok();
         }
 
@@ -178,15 +192,25 @@ namespace api.controllers.DangNhapDangKy
                 return BadRequest("Mật khẩu không được để trống.");
             }
             
-
+            var khachHang = db.KhachHangs.FirstOrDefault(u => u.IdKh == userId);
+            if (khachHang != null)
+            {
+                khachHang.MatKhau = newPassword.MatKhau;
+                db.SaveChanges();
+                return Ok("Mật khẩu đã được đặt lại thành công.");
+            }
             var user = db.Chus.FirstOrDefault(u => u.IdChu == userId);
             if (user == null)
             {
                 return NotFound("Người dùng không tồn tại.");
             }
+            else
+            {
+                 user.MatKhau = newPassword.MatKhau;
+                db.SaveChanges();
+            }
 
-            user.MatKhau = newPassword.MatKhau;
-            db.SaveChanges();
+           
 
             return Ok("Mật khẩu đã được đặt lại thành công.");
         }

@@ -165,14 +165,42 @@ go
 
 
 --select * from HoaDon
---select * from Chu
-
+--select * from KhachHang
+select * from Chu
+update HoaDon
+set ngayThanhToan=null
+where  idHoaDon=56
+update HoaDon
+set anhHoaDon=null
+where idHoaDon=56
+update HoaDon
+set trangThai=0
+where idHoaDon=56
+update KhachHang
+set avatar='khonghinh'
+update HoaDon
+set soTien=3000000
 update Chu
 set giaNuoc=0
 where idChu=2
 update Chu
 set giaDien=0
 where idChu=2
+
+
+SELECT 
+    MONTH(hd.ngayThanhToan) AS Thang,
+    YEAR(hd.ngayThanhToan) AS Nam,
+    SUM(hd.soTien) AS TongTien
+FROM HoaDon hd
+JOIN Phong p ON hd.idPhong = p.idPhong
+JOIN CoSo cs ON p.idCoSo = cs.idCoSo
+JOIN Chu chu ON chu.idChu = cs.idChu
+WHERE hd.trangThai = 1
+GROUP BY YEAR(hd.ngayThanhToan), MONTH(hd.ngayThanhToan)
+ORDER BY Nam, Thang;
+
+
 
 create trigger trg_insertPhong
 on Phong
@@ -199,7 +227,7 @@ BEGIN
     DECLARE PhongCursor CURSOR FOR
     SELECT p.tienPhong, p.idPhong, p.idCoSo FROM Phong p
     JOIN CoSo c ON p.idCoSo = c.idCoSo
-    WHERE c.idChu = @idChu AND c.trangThai = 1 AND p.trangThai = 1
+    WHERE c.idChu = @idChu AND c.trangThai = 1 AND p.trangThai = 1 and p.soLuong>0
 
    
     OPEN PhongCursor

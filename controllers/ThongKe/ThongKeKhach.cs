@@ -35,8 +35,10 @@ namespace api.controllers.ThongKe
                 .ToList();
 
 
-            return Ok(new{coSo,phongthue=db.Phongs.Join(db.CoSos, p => p.IdCoSo, cs => cs.IdCoSo, (p, cs) => new { p, cs })
-                .Where(t => t.p.TrangThai == 1 && t.cs.IdChu == idChu&&t.p.SoLuong>0).Count(),phongtrong=db.Phongs.Join(db.CoSos, p => p.IdCoSo, cs => cs.IdCoSo, (p, cs) => new { p, cs })
+            return Ok(new{coSo,
+                phongthue =db.Phongs.Join(db.CoSos, p => p.IdCoSo, cs => cs.IdCoSo, (p, cs) => new { p, cs })
+                .Where(t => t.p.TrangThai == 1 && t.cs.IdChu == idChu&&t.p.SoLuong>0).Count(),
+                phongtrong =db.Phongs.Join(db.CoSos, p => p.IdCoSo, cs => cs.IdCoSo, (p, cs) => new { p, cs })
                 .Where(t => t.p.TrangThai == 1 && t.cs.IdChu == idChu&&t.p.SoLuong==0).Count()});
         }
 

@@ -147,3 +147,16 @@ D:\hoc\LTDD\DoAn\api\obj\Debug\net8.0\api.genruntimeconfig.cache
 D:\hoc\LTDD\DoAn\api\obj\Debug\net8.0\ref\api.dll
 D:\hoc\LTDD\DoAn\api\obj\Debug\net8.0\api.sourcelink.json
 D:\hoc\LTDD\DoAn\api\bin\Debug\net8.0\api.staticwebassets.runtime.json
+D:\hoc\LTDD\DoAn\api\bin\Debug\net8.0\itext.barcodes.dll
+D:\hoc\LTDD\DoAn\api\bin\Debug\net8.0\itext.forms.dll
+D:\hoc\LTDD\DoAn\api\bin\Debug\net8.0\itext.io.dll
+D:\hoc\LTDD\DoAn\api\bin\Debug\net8.0\itext.kernel.dll
+D:\hoc\LTDD\DoAn\api\bin\Debug\net8.0\itext.layout.dll
+D:\hoc\LTDD\DoAn\api\bin\Debug\net8.0\itext.pdfa.dll
+D:\hoc\LTDD\DoAn\api\bin\Debug\net8.0\itext.sign.dll
+D:\hoc\LTDD\DoAn\api\bin\Debug\net8.0\itext.styledxmlparser.dll
+D:\hoc\LTDD\DoAn\api\bin\Debug\net8.0\itext.svg.dll
+D:\hoc\LTDD\DoAn\api\bin\Debug\net8.0\itext.commons.dll
+D:\hoc\LTDD\DoAn\api\bin\Debug\net8.0\Microsoft.DotNet.PlatformAbstractions.dll
+D:\hoc\LTDD\DoAn\api\bin\Debug\net8.0\Newtonsoft.Json.dll
+D:\hoc\LTDD\DoAn\api\bin\Debug\net8.0\BouncyCastle.Crypto.dll

@@ -5,6 +5,18 @@
       "PackagePath": "staticwebassets\\images\\Avatar\\anh1.jpg"
     },
     {
+      "Id": "D:\\hoc\\LTDD\\DoAn\\api\\wwwroot\\images\\Avatar\\avatarChu_1_638852307674603442.png",
+      "PackagePath": "staticwebassets\\images\\Avatar\\avatarChu_1_638852307674603442.png"
+    },
+    {
+      "Id": "D:\\hoc\\LTDD\\DoAn\\api\\wwwroot\\images\\Avatar\\avatarKH_6_638851767898641448.png",
+      "PackagePath": "staticwebassets\\images\\Avatar\\avatarKH_6_638851767898641448.png"
+    },
+    {
+      "Id": "D:\\hoc\\LTDD\\DoAn\\api\\wwwroot\\images\\Avatar\\avatarKH_6_638851775049160665.png",
+      "PackagePath": "staticwebassets\\images\\Avatar\\avatarKH_6_638851775049160665.png"
+    },
+    {
       "Id": "D:\\hoc\\LTDD\\DoAn\\api\\wwwroot\\images\\Avatar\\avatar_1_638849742896548799.png",
       "PackagePath": "staticwebassets\\images\\Avatar\\avatar_1_638849742896548799.png"
     },
@@ -51,6 +63,34 @@
     {
       "Id": "D:\\hoc\\LTDD\\DoAn\\api\\wwwroot\\images\\HoaDon\\hd1.jpg",
       "PackagePath": "staticwebassets\\images\\HoaDon\\hd1.jpg"
+    },
+    {
+      "Id": "D:\\hoc\\LTDD\\DoAn\\api\\wwwroot\\images\\HoaDon\\hoaDon_56_638851895615801335.png",
+      "PackagePath": "staticwebassets\\images\\HoaDon\\hoaDon_56_638851895615801335.png"
+    },
+    {
+      "Id": "D:\\hoc\\LTDD\\DoAn\\api\\wwwroot\\images\\HoaDon\\hoaDon_56_638851900497462657.png",
+      "PackagePath": "staticwebassets\\images\\HoaDon\\hoaDon_56_638851900497462657.png"
+    },
+    {
+      "Id": "D:\\hoc\\LTDD\\DoAn\\api\\wwwroot\\images\\HoaDon\\hoaDon_56_638851902751811101.png",
+      "PackagePath": "staticwebassets\\images\\HoaDon\\hoaDon_56_638851902751811101.png"
+    },
+    {
+      "Id": "D:\\hoc\\LTDD\\DoAn\\api\\wwwroot\\images\\HoaDon\\hoaDon_56_638851903568408357.png",
+      "PackagePath": "staticwebassets\\images\\HoaDon\\hoaDon_56_638851903568408357.png"
+    },
+    {
+      "Id": "D:\\hoc\\LTDD\\DoAn\\api\\wwwroot\\images\\HoaDon\\hoaDon_56_638851904273766618.png",
+      "PackagePath": "staticwebassets\\images\\HoaDon\\hoaDon_56_638851904273766618.png"
+    },
+    {
+      "Id": "D:\\hoc\\LTDD\\DoAn\\api\\wwwroot\\images\\HoaDon\\hoaDon_56_638851905777670899.png",
+      "PackagePath": "staticwebassets\\images\\HoaDon\\hoaDon_56_638851905777670899.png"
+    },
+    {
+      "Id": "D:\\hoc\\LTDD\\DoAn\\api\\wwwroot\\images\\HoaDon\\hoaDon_56_638852316775624100.png",
+      "PackagePath": "staticwebassets\\images\\HoaDon\\hoaDon_56_638852316775624100.png"
     },
     {
       "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.api.Microsoft.AspNetCore.StaticWebAssetEndpoints.props",

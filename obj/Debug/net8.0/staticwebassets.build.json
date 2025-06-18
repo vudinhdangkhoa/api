@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "3+hVhSss47cLuObDvWFSZp2T/5RX0KhM42vArsnIXPo=",
+  "Hash": "+FZnBs1bEPuhpbsf5vadvfJY6zdX8hPT8EWbshYteCA=",
   "Source": "api",
   "BasePath": "_content/api",
   "Mode": "Default",
@@ -269,6 +269,69 @@
       "OriginalItemSpec": "wwwroot\\images\\Avatar\\avatar_1_638849750944716841.png"
     },
     {
+      "Identity": "D:\\hoc\\LTDD\\DoAn\\api\\wwwroot\\images\\Avatar\\avatarChu_1_638852307674603442.png",
+      "SourceId": "api",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\hoc\\LTDD\\DoAn\\api\\wwwroot\\",
+      "BasePath": "_content/api",
+      "RelativePath": "images/Avatar/avatarChu_1_638852307674603442#[.{fingerprint}]?.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "5314ny8el2",
+      "Integrity": "gR03huFdeO9bFM3ZrzevxLKUeg2MY20ccGDG7N597DU=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\Avatar\\avatarChu_1_638852307674603442.png"
+    },
+    {
+      "Identity": "D:\\hoc\\LTDD\\DoAn\\api\\wwwroot\\images\\Avatar\\avatarKH_6_638851767898641448.png",
+      "SourceId": "api",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\hoc\\LTDD\\DoAn\\api\\wwwroot\\",
+      "BasePath": "_content/api",
+      "RelativePath": "images/Avatar/avatarKH_6_638851767898641448#[.{fingerprint}]?.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "94gwc6mxjg",
+      "Integrity": "mR0fO07jCwR9mfZf+z6+5jsOcuSnevGwPSuo6yx7Hc4=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\Avatar\\avatarKH_6_638851767898641448.png"
+    },
+    {
+      "Identity": "D:\\hoc\\LTDD\\DoAn\\api\\wwwroot\\images\\Avatar\\avatarKH_6_638851775049160665.png",
+      "SourceId": "api",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\hoc\\LTDD\\DoAn\\api\\wwwroot\\",
+      "BasePath": "_content/api",
+      "RelativePath": "images/Avatar/avatarKH_6_638851775049160665#[.{fingerprint}]?.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "5314ny8el2",
+      "Integrity": "gR03huFdeO9bFM3ZrzevxLKUeg2MY20ccGDG7N597DU=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\Avatar\\avatarKH_6_638851775049160665.png"
+    },
+    {
       "Identity": "D:\\hoc\\LTDD\\DoAn\\api\\wwwroot\\images\\HoaDon\\hd1.jpg",
       "SourceId": "api",
       "SourceType": "Discovered",
@@ -288,6 +351,153 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\images\\HoaDon\\hd1.jpg"
+    },
+    {
+      "Identity": "D:\\hoc\\LTDD\\DoAn\\api\\wwwroot\\images\\HoaDon\\hoaDon_56_638851895615801335.png",
+      "SourceId": "api",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\hoc\\LTDD\\DoAn\\api\\wwwroot\\",
+      "BasePath": "_content/api",
+      "RelativePath": "images/HoaDon/hoaDon_56_638851895615801335#[.{fingerprint}]?.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "qw2znsk93r",
+      "Integrity": "euDc12yAIAxmkKyjNgwK8CIDg71Vd2lS28YVYPlsqKk=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\HoaDon\\hoaDon_56_638851895615801335.png"
+    },
+    {
+      "Identity": "D:\\hoc\\LTDD\\DoAn\\api\\wwwroot\\images\\HoaDon\\hoaDon_56_638851900497462657.png",
+      "SourceId": "api",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\hoc\\LTDD\\DoAn\\api\\wwwroot\\",
+      "BasePath": "_content/api",
+      "RelativePath": "images/HoaDon/hoaDon_56_638851900497462657#[.{fingerprint}]?.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "qw2znsk93r",
+      "Integrity": "euDc12yAIAxmkKyjNgwK8CIDg71Vd2lS28YVYPlsqKk=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\HoaDon\\hoaDon_56_638851900497462657.png"
+    },
+    {
+      "Identity": "D:\\hoc\\LTDD\\DoAn\\api\\wwwroot\\images\\HoaDon\\hoaDon_56_638851902751811101.png",
+      "SourceId": "api",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\hoc\\LTDD\\DoAn\\api\\wwwroot\\",
+      "BasePath": "_content/api",
+      "RelativePath": "images/HoaDon/hoaDon_56_638851902751811101#[.{fingerprint}]?.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "qw2znsk93r",
+      "Integrity": "euDc12yAIAxmkKyjNgwK8CIDg71Vd2lS28YVYPlsqKk=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\HoaDon\\hoaDon_56_638851902751811101.png"
+    },
+    {
+      "Identity": "D:\\hoc\\LTDD\\DoAn\\api\\wwwroot\\images\\HoaDon\\hoaDon_56_638851903568408357.png",
+      "SourceId": "api",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\hoc\\LTDD\\DoAn\\api\\wwwroot\\",
+      "BasePath": "_content/api",
+      "RelativePath": "images/HoaDon/hoaDon_56_638851903568408357#[.{fingerprint}]?.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "qw2znsk93r",
+      "Integrity": "euDc12yAIAxmkKyjNgwK8CIDg71Vd2lS28YVYPlsqKk=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\HoaDon\\hoaDon_56_638851903568408357.png"
+    },
+    {
+      "Identity": "D:\\hoc\\LTDD\\DoAn\\api\\wwwroot\\images\\HoaDon\\hoaDon_56_638851904273766618.png",
+      "SourceId": "api",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\hoc\\LTDD\\DoAn\\api\\wwwroot\\",
+      "BasePath": "_content/api",
+      "RelativePath": "images/HoaDon/hoaDon_56_638851904273766618#[.{fingerprint}]?.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "qw2znsk93r",
+      "Integrity": "euDc12yAIAxmkKyjNgwK8CIDg71Vd2lS28YVYPlsqKk=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\HoaDon\\hoaDon_56_638851904273766618.png"
+    },
+    {
+      "Identity": "D:\\hoc\\LTDD\\DoAn\\api\\wwwroot\\images\\HoaDon\\hoaDon_56_638851905777670899.png",
+      "SourceId": "api",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\hoc\\LTDD\\DoAn\\api\\wwwroot\\",
+      "BasePath": "_content/api",
+      "RelativePath": "images/HoaDon/hoaDon_56_638851905777670899#[.{fingerprint}]?.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "qw2znsk93r",
+      "Integrity": "euDc12yAIAxmkKyjNgwK8CIDg71Vd2lS28YVYPlsqKk=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\HoaDon\\hoaDon_56_638851905777670899.png"
+    },
+    {
+      "Identity": "D:\\hoc\\LTDD\\DoAn\\api\\wwwroot\\images\\HoaDon\\hoaDon_56_638852316775624100.png",
+      "SourceId": "api",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\hoc\\LTDD\\DoAn\\api\\wwwroot\\",
+      "BasePath": "_content/api",
+      "RelativePath": "images/HoaDon/hoaDon_56_638852316775624100#[.{fingerprint}]?.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "qw2znsk93r",
+      "Integrity": "euDc12yAIAxmkKyjNgwK8CIDg71Vd2lS28YVYPlsqKk=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\HoaDon\\hoaDon_56_638852316775624100.png"
     }
   ],
   "Endpoints": [
@@ -1276,6 +1486,252 @@
       ]
     },
     {
+      "Route": "images/Avatar/avatarChu_1_638852307674603442.5314ny8el2.png",
+      "AssetFile": "D:\\hoc\\LTDD\\DoAn\\api\\wwwroot\\images\\Avatar\\avatarChu_1_638852307674603442.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "40818"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"gR03huFdeO9bFM3ZrzevxLKUeg2MY20ccGDG7N597DU=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 11 Jun 2025 02:26:07 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "5314ny8el2"
+        },
+        {
+          "Name": "label",
+          "Value": "images/Avatar/avatarChu_1_638852307674603442.png"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-gR03huFdeO9bFM3ZrzevxLKUeg2MY20ccGDG7N597DU="
+        }
+      ]
+    },
+    {
+      "Route": "images/Avatar/avatarChu_1_638852307674603442.png",
+      "AssetFile": "D:\\hoc\\LTDD\\DoAn\\api\\wwwroot\\images\\Avatar\\avatarChu_1_638852307674603442.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "40818"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"gR03huFdeO9bFM3ZrzevxLKUeg2MY20ccGDG7N597DU=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 11 Jun 2025 02:26:07 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-gR03huFdeO9bFM3ZrzevxLKUeg2MY20ccGDG7N597DU="
+        }
+      ]
+    },
+    {
+      "Route": "images/Avatar/avatarKH_6_638851767898641448.94gwc6mxjg.png",
+      "AssetFile": "D:\\hoc\\LTDD\\DoAn\\api\\wwwroot\\images\\Avatar\\avatarKH_6_638851767898641448.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "141266"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"mR0fO07jCwR9mfZf+z6+5jsOcuSnevGwPSuo6yx7Hc4=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 10 Jun 2025 11:26:29 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "94gwc6mxjg"
+        },
+        {
+          "Name": "label",
+          "Value": "images/Avatar/avatarKH_6_638851767898641448.png"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-mR0fO07jCwR9mfZf+z6+5jsOcuSnevGwPSuo6yx7Hc4="
+        }
+      ]
+    },
+    {
+      "Route": "images/Avatar/avatarKH_6_638851767898641448.png",
+      "AssetFile": "D:\\hoc\\LTDD\\DoAn\\api\\wwwroot\\images\\Avatar\\avatarKH_6_638851767898641448.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "141266"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"mR0fO07jCwR9mfZf+z6+5jsOcuSnevGwPSuo6yx7Hc4=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 10 Jun 2025 11:26:29 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-mR0fO07jCwR9mfZf+z6+5jsOcuSnevGwPSuo6yx7Hc4="
+        }
+      ]
+    },
+    {
+      "Route": "images/Avatar/avatarKH_6_638851775049160665.5314ny8el2.png",
+      "AssetFile": "D:\\hoc\\LTDD\\DoAn\\api\\wwwroot\\images\\Avatar\\avatarKH_6_638851775049160665.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "40818"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"gR03huFdeO9bFM3ZrzevxLKUeg2MY20ccGDG7N597DU=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 10 Jun 2025 11:38:24 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "5314ny8el2"
+        },
+        {
+          "Name": "label",
+          "Value": "images/Avatar/avatarKH_6_638851775049160665.png"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-gR03huFdeO9bFM3ZrzevxLKUeg2MY20ccGDG7N597DU="
+        }
+      ]
+    },
+    {
+      "Route": "images/Avatar/avatarKH_6_638851775049160665.png",
+      "AssetFile": "D:\\hoc\\LTDD\\DoAn\\api\\wwwroot\\images\\Avatar\\avatarKH_6_638851775049160665.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "40818"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"gR03huFdeO9bFM3ZrzevxLKUeg2MY20ccGDG7N597DU=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 10 Jun 2025 11:38:24 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-gR03huFdeO9bFM3ZrzevxLKUeg2MY20ccGDG7N597DU="
+        }
+      ]
+    },
+    {
       "Route": "images/HoaDon/hd1.7igv3wxjda.jpg",
       "AssetFile": "D:\\hoc\\LTDD\\DoAn\\api\\wwwroot\\images\\HoaDon\\hd1.jpg",
       "Selectors": [],
@@ -1354,6 +1810,580 @@
         {
           "Name": "integrity",
           "Value": "sha256-sWfzANqZEN6SIg4jalgp+Of8n9dBAX5GHM6o7qE0peo="
+        }
+      ]
+    },
+    {
+      "Route": "images/HoaDon/hoaDon_56_638851895615801335.png",
+      "AssetFile": "D:\\hoc\\LTDD\\DoAn\\api\\wwwroot\\images\\HoaDon\\hoaDon_56_638851895615801335.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "53024"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"euDc12yAIAxmkKyjNgwK8CIDg71Vd2lS28YVYPlsqKk=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 10 Jun 2025 14:59:21 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-euDc12yAIAxmkKyjNgwK8CIDg71Vd2lS28YVYPlsqKk="
+        }
+      ]
+    },
+    {
+      "Route": "images/HoaDon/hoaDon_56_638851895615801335.qw2znsk93r.png",
+      "AssetFile": "D:\\hoc\\LTDD\\DoAn\\api\\wwwroot\\images\\HoaDon\\hoaDon_56_638851895615801335.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "53024"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"euDc12yAIAxmkKyjNgwK8CIDg71Vd2lS28YVYPlsqKk=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 10 Jun 2025 14:59:21 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "qw2znsk93r"
+        },
+        {
+          "Name": "label",
+          "Value": "images/HoaDon/hoaDon_56_638851895615801335.png"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-euDc12yAIAxmkKyjNgwK8CIDg71Vd2lS28YVYPlsqKk="
+        }
+      ]
+    },
+    {
+      "Route": "images/HoaDon/hoaDon_56_638851900497462657.png",
+      "AssetFile": "D:\\hoc\\LTDD\\DoAn\\api\\wwwroot\\images\\HoaDon\\hoaDon_56_638851900497462657.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "53024"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"euDc12yAIAxmkKyjNgwK8CIDg71Vd2lS28YVYPlsqKk=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 10 Jun 2025 15:07:29 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-euDc12yAIAxmkKyjNgwK8CIDg71Vd2lS28YVYPlsqKk="
+        }
+      ]
+    },
+    {
+      "Route": "images/HoaDon/hoaDon_56_638851900497462657.qw2znsk93r.png",
+      "AssetFile": "D:\\hoc\\LTDD\\DoAn\\api\\wwwroot\\images\\HoaDon\\hoaDon_56_638851900497462657.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "53024"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"euDc12yAIAxmkKyjNgwK8CIDg71Vd2lS28YVYPlsqKk=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 10 Jun 2025 15:07:29 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "qw2znsk93r"
+        },
+        {
+          "Name": "label",
+          "Value": "images/HoaDon/hoaDon_56_638851900497462657.png"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-euDc12yAIAxmkKyjNgwK8CIDg71Vd2lS28YVYPlsqKk="
+        }
+      ]
+    },
+    {
+      "Route": "images/HoaDon/hoaDon_56_638851902751811101.png",
+      "AssetFile": "D:\\hoc\\LTDD\\DoAn\\api\\wwwroot\\images\\HoaDon\\hoaDon_56_638851902751811101.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "53024"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"euDc12yAIAxmkKyjNgwK8CIDg71Vd2lS28YVYPlsqKk=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 10 Jun 2025 15:11:15 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-euDc12yAIAxmkKyjNgwK8CIDg71Vd2lS28YVYPlsqKk="
+        }
+      ]
+    },
+    {
+      "Route": "images/HoaDon/hoaDon_56_638851902751811101.qw2znsk93r.png",
+      "AssetFile": "D:\\hoc\\LTDD\\DoAn\\api\\wwwroot\\images\\HoaDon\\hoaDon_56_638851902751811101.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "53024"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"euDc12yAIAxmkKyjNgwK8CIDg71Vd2lS28YVYPlsqKk=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 10 Jun 2025 15:11:15 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "qw2znsk93r"
+        },
+        {
+          "Name": "label",
+          "Value": "images/HoaDon/hoaDon_56_638851902751811101.png"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-euDc12yAIAxmkKyjNgwK8CIDg71Vd2lS28YVYPlsqKk="
+        }
+      ]
+    },
+    {
+      "Route": "images/HoaDon/hoaDon_56_638851903568408357.png",
+      "AssetFile": "D:\\hoc\\LTDD\\DoAn\\api\\wwwroot\\images\\HoaDon\\hoaDon_56_638851903568408357.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "53024"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"euDc12yAIAxmkKyjNgwK8CIDg71Vd2lS28YVYPlsqKk=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 10 Jun 2025 15:12:36 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-euDc12yAIAxmkKyjNgwK8CIDg71Vd2lS28YVYPlsqKk="
+        }
+      ]
+    },
+    {
+      "Route": "images/HoaDon/hoaDon_56_638851903568408357.qw2znsk93r.png",
+      "AssetFile": "D:\\hoc\\LTDD\\DoAn\\api\\wwwroot\\images\\HoaDon\\hoaDon_56_638851903568408357.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "53024"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"euDc12yAIAxmkKyjNgwK8CIDg71Vd2lS28YVYPlsqKk=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 10 Jun 2025 15:12:36 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "qw2znsk93r"
+        },
+        {
+          "Name": "label",
+          "Value": "images/HoaDon/hoaDon_56_638851903568408357.png"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-euDc12yAIAxmkKyjNgwK8CIDg71Vd2lS28YVYPlsqKk="
+        }
+      ]
+    },
+    {
+      "Route": "images/HoaDon/hoaDon_56_638851904273766618.png",
+      "AssetFile": "D:\\hoc\\LTDD\\DoAn\\api\\wwwroot\\images\\HoaDon\\hoaDon_56_638851904273766618.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "53024"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"euDc12yAIAxmkKyjNgwK8CIDg71Vd2lS28YVYPlsqKk=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 10 Jun 2025 15:13:47 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-euDc12yAIAxmkKyjNgwK8CIDg71Vd2lS28YVYPlsqKk="
+        }
+      ]
+    },
+    {
+      "Route": "images/HoaDon/hoaDon_56_638851904273766618.qw2znsk93r.png",
+      "AssetFile": "D:\\hoc\\LTDD\\DoAn\\api\\wwwroot\\images\\HoaDon\\hoaDon_56_638851904273766618.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "53024"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"euDc12yAIAxmkKyjNgwK8CIDg71Vd2lS28YVYPlsqKk=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 10 Jun 2025 15:13:47 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "qw2znsk93r"
+        },
+        {
+          "Name": "label",
+          "Value": "images/HoaDon/hoaDon_56_638851904273766618.png"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-euDc12yAIAxmkKyjNgwK8CIDg71Vd2lS28YVYPlsqKk="
+        }
+      ]
+    },
+    {
+      "Route": "images/HoaDon/hoaDon_56_638851905777670899.png",
+      "AssetFile": "D:\\hoc\\LTDD\\DoAn\\api\\wwwroot\\images\\HoaDon\\hoaDon_56_638851905777670899.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "53024"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"euDc12yAIAxmkKyjNgwK8CIDg71Vd2lS28YVYPlsqKk=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 10 Jun 2025 15:16:17 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-euDc12yAIAxmkKyjNgwK8CIDg71Vd2lS28YVYPlsqKk="
+        }
+      ]
+    },
+    {
+      "Route": "images/HoaDon/hoaDon_56_638851905777670899.qw2znsk93r.png",
+      "AssetFile": "D:\\hoc\\LTDD\\DoAn\\api\\wwwroot\\images\\HoaDon\\hoaDon_56_638851905777670899.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "53024"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"euDc12yAIAxmkKyjNgwK8CIDg71Vd2lS28YVYPlsqKk=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 10 Jun 2025 15:16:17 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "qw2znsk93r"
+        },
+        {
+          "Name": "label",
+          "Value": "images/HoaDon/hoaDon_56_638851905777670899.png"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-euDc12yAIAxmkKyjNgwK8CIDg71Vd2lS28YVYPlsqKk="
+        }
+      ]
+    },
+    {
+      "Route": "images/HoaDon/hoaDon_56_638852316775624100.png",
+      "AssetFile": "D:\\hoc\\LTDD\\DoAn\\api\\wwwroot\\images\\HoaDon\\hoaDon_56_638852316775624100.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "53024"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"euDc12yAIAxmkKyjNgwK8CIDg71Vd2lS28YVYPlsqKk=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 11 Jun 2025 02:41:17 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-euDc12yAIAxmkKyjNgwK8CIDg71Vd2lS28YVYPlsqKk="
+        }
+      ]
+    },
+    {
+      "Route": "images/HoaDon/hoaDon_56_638852316775624100.qw2znsk93r.png",
+      "AssetFile": "D:\\hoc\\LTDD\\DoAn\\api\\wwwroot\\images\\HoaDon\\hoaDon_56_638852316775624100.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "53024"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"euDc12yAIAxmkKyjNgwK8CIDg71Vd2lS28YVYPlsqKk=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 11 Jun 2025 02:41:17 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "qw2znsk93r"
+        },
+        {
+          "Name": "label",
+          "Value": "images/HoaDon/hoaDon_56_638852316775624100.png"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-euDc12yAIAxmkKyjNgwK8CIDg71Vd2lS28YVYPlsqKk="
         }
       ]
     }

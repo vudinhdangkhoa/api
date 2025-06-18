@@ -80,7 +80,7 @@ namespace api.controllers.TrangChu
                 byte[] imageBytes = Convert.FromBase64String(cleanedBase64);
                 // tiếp tục xử lý
                 // Tạo tên file duy nhất
-                string fileName = $"avatar_{id}_{DateTime.Now.Ticks}.png";
+                string fileName = $"avatarChu_{id}_{DateTime.Now.Ticks}.png";
                 string folderPath = Path.Combine(Directory.GetCurrentDirectory(), "wwwroot", "images", "Avatar");
                 if (!Directory.Exists(folderPath))
                     Directory.CreateDirectory(folderPath);

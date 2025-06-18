@@ -89,7 +89,7 @@ namespace api.controllers.QuanLy
                 IdPhong = idPhong,
                 NgayDen = DateOnly.FromDateTime(DateTime.Now),
                 Tinhtrang = 1,
-                Avatar= null,
+                Avatar= "khonghinh",
                 Email = themkh.Email,
             };
             db.KhachHangs.Add(a);
